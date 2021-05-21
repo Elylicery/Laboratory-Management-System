@@ -2,7 +2,7 @@
  * @Author: Xiaochun
  * @Date: 2021-05-19 10:46:54
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2021-05-19 11:40:21
+ * @Last Modified time: 2021-05-19 16:49:19
  */
 
 const path = require("path");
@@ -21,6 +21,7 @@ module.exports = {
 		filename: "js/app.js",
 	},
 	resolve: {
+    //alisa处理别名
 		alias: {
 			page: path.resolve(__dirname, "src/page"),
 			component: path.resolve(__dirname, "src/component"),
@@ -102,7 +103,7 @@ module.exports = {
 	devServer: {
 		port: 8087,
 		historyApiFallback: {
-			index: "/dist/index.html",
+			index: "/dist/index.html",//如果404返回指定的路径页面
 		},
 		proxy: {
 			"/manage": {

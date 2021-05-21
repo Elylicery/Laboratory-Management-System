@@ -2,7 +2,7 @@
  * @Author: Xiaochun
  * @Date: 2021-04-23 11:22:36
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2021-04-23 17:36:31
+ * @Last Modified time: 2021-05-21 17:30:08
  */
 
 //首页
@@ -40,6 +40,15 @@ class Home extends React.Component {
 		return (
 			<div className="is-preload">
 				<div id="wrapper">
+        <header id="header">
+				<div className="inner">
+					<a href="index.html" className="logo">
+						<span className="symbol"><img src="images/logo.svg" alt="" /></span
+						><span className="title">Lab-1301</span>
+					</a>
+				</div>
+			</header>
+
 					{/* <PageTitle title="首页" /> */}
 					<div id="main">
 						<div className="inner">
@@ -60,40 +69,40 @@ class Home extends React.Component {
 									<span className="image">
 										<img src="../images/pic01.jpg" alt="" />
 									</span>
-									<a>
-										<h2>出差登记</h2>
+                  <Link to="/business">
+                  <h2>出差登记</h2>
 										<div className="content">
 											<p>
                       出差登记，可选一天/上午/下午出差，月末统一进行出差补助的发放.
 											</p>
 										</div>
-									</a>
+                  </Link>
 								</article>
 								<article className="style2">
 									<span className="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a>
+									<Link to="/expense">
 										<h2>报销登记</h2>
 										<div className="content">
 											<div>
                       公费报销，详细填写购买清单并上传发票，（出租车除发票外还要上传行程单），月末统一进行报销.
 											</div>
 										</div>
-									</a>
+									</Link>
 								</article>
 								<article className="style3">
 									<span className="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
-									<a>
+									<Link to="/my">
 										<h2>我的记录</h2>
 										<div className="content">
 											<p>
                       包含出差记录 & 报销记录.
 											</p>
 										</div>
-									</a>
+									</Link>
 								</article>
 							</section>
 						</div>

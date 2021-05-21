@@ -1,11 +1,15 @@
 /*
-* @Author: Rosen
-* @Date:   2018-02-01 16:27:52
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-02-01 16:29:25
-*/
-.page-header-right{
-    position: absolute;
-    right: 15px;
-    top: 12px;
+ * @Author: Xiaochun 
+ * @Date: 2021-05-21 16:28:36 
+ * @Last Modified by: Xiaochun
+ * @Last Modified time: 2021-05-21 17:27:43
+ */
+
+//小幅度样式修改
+#wrapper .dropdown{
+  margin-left: -0.5em;
+}
+
+#header{
+  padding: 0.5em 0 0.1em 0;
 }

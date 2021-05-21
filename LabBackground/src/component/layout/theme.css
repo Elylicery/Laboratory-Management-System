@@ -78,7 +78,7 @@ p {
     width: 260px;
     top: 60px;
     bottom: 0;
-    overflow-y : auto;
+    overflow-y : auto;/*需要的时候滚动*/
     background: #2b2e33;
 }
 

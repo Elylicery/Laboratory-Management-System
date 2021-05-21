@@ -2,11 +2,10 @@
  * @Author: Xiaochun 
  * @Date: 2021-04-23 11:22:36 
  * @Last Modified by: Xiaochun
- * @Last Modified time: 2021-04-23 15:22:20
+ * @Last Modified time: 2021-05-19 17:09:44
  */
 
 //首页
-
 import React        from 'react';
 import { Link }     from 'react-router-dom';
 
@@ -19,25 +18,26 @@ const _statistic    = new Statistic();
 import PageTitle    from 'component/page-title/index.jsx';
 import './index.scss'
 
+//Home组件
 class Home extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            userCount       : '-',
-            expenseCount    : '-',
-            orderCount      : '-'
-        }
-    }
-    componentDidMount(){
-        this.loadCount();
-    }
-    loadCount(){
-        _statistic.getHomeCount().then(res => {
-            this.setState(res);
-        }, errMsg => {
-            _mm.errorTips(errMsg);
-        });
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         userCount       : '-',
+    //         expenseCount    : '-',
+    //         orderCount      : '-'
+    //     }
+    // }
+    // componentDidMount(){
+    //     this.loadCount();
+    // }
+    // loadCount(){
+    //     _statistic.getHomeCount().then(res => {
+    //         this.setState(res);
+    //     }, errMsg => {
+    //         _mm.errorTips(errMsg);
+    //     });
+    // }
     render(){
         return (
             <div id="page-wrapper">
